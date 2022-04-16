@@ -8,7 +8,7 @@
 import UIKit
 
 class SplashViewController: BaseViewController {
-    
+
     lazy var router: SplashRoutingLogic = SplashRouter()
     @IBOutlet weak var splashImageView: UIImageView!
 
@@ -19,9 +19,9 @@ class SplashViewController: BaseViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+
         router.viewController = self
-        
+
         configure()
         animation()
     }
@@ -35,7 +35,11 @@ class SplashViewController: BaseViewController {
                     self.splashImageView.alpha = 0
                 } completion: { (done) in
                     if(done) {
-                        self.router.route(.onBoard)
+                        if UserDefaults.standard[.onBoard] {
+                            self.router.route(.homePage)
+                        } else {
+                            self.router.route(.onBoard)
+                        }
                     }
                 }
             }

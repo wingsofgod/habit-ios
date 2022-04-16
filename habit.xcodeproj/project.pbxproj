@@ -34,6 +34,7 @@
 		4DDE4EC8280B338900517C22 /* OnBoardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE4EC7280B338900517C22 /* OnBoardCollectionView.swift */; };
 		4DDE4ECA280B5EA800517C22 /* OnBoardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE4EC9280B5EA800517C22 /* OnBoardRouter.swift */; };
 		4DDE4ECD280B606F00517C22 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE4ECC280B606F00517C22 /* HomePageViewController.swift */; };
+		4DDE4ECF280B710100517C22 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE4ECE280B710100517C22 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		4DDE4EC7280B338900517C22 /* OnBoardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardCollectionView.swift; sourceTree = "<group>"; };
 		4DDE4EC9280B5EA800517C22 /* OnBoardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardRouter.swift; sourceTree = "<group>"; };
 		4DDE4ECC280B606F00517C22 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		4DDE4ECE280B710100517C22 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		6FFEF3B4A934A0A0259A9871 /* Pods-habit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-habit.debug.xcconfig"; path = "Target Support Files/Pods-habit/Pods-habit.debug.xcconfig"; sourceTree = "<group>"; };
 		F33A73E651BD0160579E49A0 /* Pods-habit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-habit.release.xcconfig"; path = "Target Support Files/Pods-habit/Pods-habit.release.xcconfig"; sourceTree = "<group>"; };
 		FF60DC3AC4C4B8383E3B9C96 /* Pods_habit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_habit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				4DDE4EA1280AE0BC00517C22 /* UITableViewCell.swift */,
 				4DDE4E9F280AE0BC00517C22 /* UIView.swift */,
 				4DDE4EA3280AE0BC00517C22 /* UIViewController.swift */,
+				4DDE4ECE280B710100517C22 /* UserDefaults.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				4DDE4EA6280AE0BC00517C22 /* CustomError.swift in Sources */,
 				4DDE4EC1280AFE2600517C22 /* SplashRouter.swift in Sources */,
 				4DDE4EA9280AE0BC00517C22 /* UIViewController.swift in Sources */,
+				4DDE4ECF280B710100517C22 /* UserDefaults.swift in Sources */,
 				4DDE4EC6280B19B300517C22 /* OnBoardCollectionViewCell.swift in Sources */,
 				4DDE4EB5280AE40D00517C22 /* CategoryResponseModel.swift in Sources */,
 				4DDE4EC3280B176C00517C22 /* OnboardingSlideModel.swift in Sources */,

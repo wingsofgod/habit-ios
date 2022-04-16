@@ -49,6 +49,7 @@ class OnBoardViewController: BaseViewController {
 
     @IBAction func nextButtonTap(_ sender: UIButton) {
         if currentPage == slides.count - 1 {
+            UserDefaults.standard[.onBoard] = true
             router.route(.homePage)
         } else {
             currentPage += 1
