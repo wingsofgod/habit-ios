@@ -1,5 +1,5 @@
 //
-//  FavoriteAnimalResponseModel.swift
+//  FavouriteAnimalResponseModel.swift
 //  habit
 //
 //  Created by Canberk Bibican on 16.04.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FavoriteAnimalResponseModel : Codable {
+struct FavouriteAnimalResponseModel : Codable {
     let id : Int?
     let name : String?
     let image : String?

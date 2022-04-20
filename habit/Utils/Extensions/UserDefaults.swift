@@ -7,6 +7,16 @@
 
 import Foundation
 
+extension UserDefaults.Key {
+
+    private enum UserDefaultsKeys: String {
+        case onBoarded = "onBoarded"
+    }
+
+    typealias Key = UserDefaults.Key
+    static var onBoard: Key<Bool> { return Key<Bool>(UserDefaultsKeys.onBoarded.rawValue) }
+}
+
 extension UserDefaults {
 
     struct Key<Value> {
@@ -15,6 +25,7 @@ extension UserDefaults {
             self.name = name
         }
     }
+    
     subscript<V: Codable>(key: Key<V>) -> V? {
         get {
             guard let data = self.data(forKey: key.name) else {
@@ -30,52 +41,39 @@ extension UserDefaults {
             self.set(data, forKey: key.name)
         }
     }
-    
+
     subscript(key: Key<URL>) -> URL? {
         get { return self.url(forKey: key.name) }
         set { self.set(newValue, forKey: key.name) }
     }
-    
+
     subscript(key: Key<String>) -> String? {
         get { return self.string(forKey: key.name) }
         set { self.set(newValue, forKey: key.name) }
     }
-    
+
     subscript(key: Key<Data>) -> Data? {
         get { return self.data(forKey: key.name) }
         set { self.set(newValue, forKey: key.name) }
     }
-    
+
     subscript(key: Key<Bool>) -> Bool {
         get { return self.bool(forKey: key.name) }
         set { self.set(newValue, forKey: key.name) }
     }
-    
+
     subscript(key: Key<Int>) -> Int {
         get { return self.integer(forKey: key.name) }
         set { self.set(newValue, forKey: key.name) }
     }
-    
+
     subscript(key: Key<Float>) -> Float {
         get { return self.float(forKey: key.name) }
         set { self.set(newValue, forKey: key.name) }
     }
-    
+
     subscript(key: Key<Double>) -> Double {
         get { return self.double(forKey: key.name) }
         set { self.set(newValue, forKey: key.name) }
     }
 }
-
-extension UserDefaults.Key {
-    
-    private enum UserDefaultsKeys: String {
-        case onBoarded = "onBoarded"
-    }
-    
-    typealias Key = UserDefaults.Key
-    //static let test = Key<Bool>("aaaa")
-    static var onBoard: Key<Bool> { return Key<Bool>(UserDefaultsKeys.onBoarded.rawValue) }
-}
-
-

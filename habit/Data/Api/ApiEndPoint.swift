@@ -10,20 +10,20 @@ import Alamofire
 
 enum ApiEndPoint: APIConfiguration {
 
-    case animalList
+    case favouriteAnimalList
     case categoryList
     // query -> case animalList(id: String)
     // parameters -> case animalList(params: [String: Any])
     var method: HTTPMethod {
         switch self {
-        case .animalList: return .get
+        case .favouriteAnimalList: return .get
         case .categoryList: return .get
         }
     }
 
     var path: String {
         switch self {
-        case .animalList: return "animals.json"
+        case .favouriteAnimalList: return "animals.json"
         case .categoryList: return "category.json"
         //query -> case .animalList(let id): return "animals.json"+id
         }
@@ -31,7 +31,7 @@ enum ApiEndPoint: APIConfiguration {
 
     var parameters: Parameters? {
         switch self {
-        case .animalList: return nil
+        case .favouriteAnimalList: return nil
         case .categoryList: return nil
         // parameters -> case .animalList(let params): return params
         }

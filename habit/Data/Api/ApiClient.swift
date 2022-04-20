@@ -12,8 +12,8 @@ class ApiClient {
     
     static let util = Util()
 
-    static func request<T: Decodable>(_ urlConvertible: URLRequestConvertible, completion: @escaping (Result<T, Error>) -> Void) {
-        util.activityIndicatorBegin()
+    static func request<T: Decodable>(_ urlConvertible: URLRequestConvertible, loading: Bool? = true, completion: @escaping (Result<T, Error>) -> Void) {
+        if loading ?? true { util.activityIndicatorBegin() }
         if Connectivity.isConnectedToInternet {
             AF.request(urlConvertible).responseDecodable { (response: AFDataResponse<T>) in
                 switch response.result {
@@ -22,10 +22,10 @@ class ApiClient {
                 case .failure(let error):
                     completion(.failure(error))
                 }
-                util.activityIndicatorEnd()
+                if loading ?? true { util.activityIndicatorEnd() }
             }
         } else {
-            util.activityIndicatorEnd()
+            if loading ?? true { util.activityIndicatorEnd() }
             completion(.failure(CustomError.internetConnection))
         }
     }
