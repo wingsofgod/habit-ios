@@ -52,7 +52,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ugd-mx-rlH">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="567"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="527"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXZ-kI-lN7">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="149"/>
@@ -145,7 +145,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PoE-K2-Bkm">
-                                                <rect key="frame" x="0.0" y="268" width="414" height="299"/>
+                                                <rect key="frame" x="0.0" y="268" width="414" height="259"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourite Pets" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHV-ZB-Ete">
                                                         <rect key="frame" x="16" y="16" width="129" height="25"/>
@@ -157,17 +157,17 @@
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tbA-aO-NDO">
-                                                        <rect key="frame" x="0.0" y="49" width="414" height="250"/>
+                                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tbA-aO-NDO">
+                                                        <rect key="frame" x="0.0" y="49" width="414" height="210"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="250" id="KAY-AR-uv1"/>
+                                                            <constraint firstAttribute="height" constant="210" id="KAY-AR-uv1"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xui-3Q-LpN">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xui-3Q-LpN">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="10" minY="0.0" maxX="20" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
                                                     </collectionView>
@@ -220,6 +220,7 @@
                     <navigationItem key="navigationItem" id="ivV-W5-7Wl"/>
                     <connections>
                         <outlet property="categoryCollectionView" destination="SFm-VH-KK7" id="nvf-YQ-CHP"/>
+                        <outlet property="favouriteCollectionView" destination="tbA-aO-NDO" id="p1I-CJ-mq3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CB7-bg-Yd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

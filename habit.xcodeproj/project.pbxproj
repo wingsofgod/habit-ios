@@ -14,6 +14,9 @@
 		4D67313F280F40250077894C /* CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D67313E280F40250077894C /* CategoryCollectionView.swift */; };
 		4D673141280F451C0077894C /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D673140280F451C0077894C /* UICollectionViewCell.swift */; };
 		4D673144280F52950077894C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D673143280F52950077894C /* CardView.swift */; };
+		4D68E598281048D300120132 /* FavouriteCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68E597281048D300120132 /* FavouriteCollectionView.swift */; };
+		4D68E59B2810496000120132 /* FavouriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68E5992810496000120132 /* FavouriteCollectionViewCell.swift */; };
+		4D68E59C2810496000120132 /* FavouriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D68E59A2810496000120132 /* FavouriteCollectionViewCell.xib */; };
 		4D799047280A040300D5047F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D799046280A040300D5047F /* AppDelegate.swift */; };
 		4D799049280A040300D5047F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D799048280A040300D5047F /* SceneDelegate.swift */; };
 		4D79904B280A040300D5047F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D79904A280A040300D5047F /* SplashViewController.swift */; };
@@ -50,6 +53,9 @@
 		4D67313E280F40250077894C /* CategoryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionView.swift; sourceTree = "<group>"; };
 		4D673140280F451C0077894C /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		4D673143280F52950077894C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4D68E597281048D300120132 /* FavouriteCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCollectionView.swift; sourceTree = "<group>"; };
+		4D68E5992810496000120132 /* FavouriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		4D68E59A2810496000120132 /* FavouriteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteCollectionViewCell.xib; sourceTree = "<group>"; };
 		4D799043280A040300D5047F /* habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D799046280A040300D5047F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D799048280A040300D5047F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,8 +105,10 @@
 		4D0497AB280C3F7B00B6E0F1 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				4D68E596281048B900120132 /* FavouriteCell */,
 				4D673137280F34350077894C /* CategoryCell */,
 				4D67313E280F40250077894C /* CategoryCollectionView.swift */,
+				4D68E597281048D300120132 /* FavouriteCollectionView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -120,6 +128,15 @@
 				4D673143280F52950077894C /* CardView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4D68E596281048B900120132 /* FavouriteCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D68E5992810496000120132 /* FavouriteCollectionViewCell.swift */,
+				4D68E59A2810496000120132 /* FavouriteCollectionViewCell.xib */,
+			);
+			path = FavouriteCell;
 			sourceTree = "<group>";
 		};
 		4D79903A280A040300D5047F = {
@@ -344,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D68E59C2810496000120132 /* FavouriteCollectionViewCell.xib in Resources */,
 				4D67313B280F34590077894C /* CategoryCollectionViewCell.xib in Resources */,
 				4D799050280A040400D5047F /* Assets.xcassets in Resources */,
 				4D79904E280A040300D5047F /* Main.storyboard in Resources */,
@@ -407,8 +425,10 @@
 				4DDE4EC1280AFE2600517C22 /* SplashRouter.swift in Sources */,
 				4DDE4EA9280AE0BC00517C22 /* UIViewController.swift in Sources */,
 				4D67313A280F34590077894C /* CategoryCollectionViewCell.swift in Sources */,
+				4D68E59B2810496000120132 /* FavouriteCollectionViewCell.swift in Sources */,
 				4DDE4ECF280B710100517C22 /* UserDefaults.swift in Sources */,
 				4D67313F280F40250077894C /* CategoryCollectionView.swift in Sources */,
+				4D68E598281048D300120132 /* FavouriteCollectionView.swift in Sources */,
 				4DDE4EC6280B19B300517C22 /* OnBoardCollectionViewCell.swift in Sources */,
 				4DDE4EB5280AE40D00517C22 /* CategoryResponseModel.swift in Sources */,
 				4DDE4EC3280B176C00517C22 /* OnboardingSlideModel.swift in Sources */,
