@@ -47,6 +47,10 @@
 		4DEA4A4C2811E163009AAC2F /* HomePageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA4A4B2811E163009AAC2F /* HomePageRouter.swift */; };
 		4DEA4A502811E3CD009AAC2F /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA4A4F2811E3CD009AAC2F /* CategoryListViewController.swift */; };
 		4DEA4A522811E3F1009AAC2F /* FavouritePetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA4A512811E3F1009AAC2F /* FavouritePetListViewController.swift */; };
+		4DEA4A542811F3ED009AAC2F /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA4A532811F3ED009AAC2F /* CategoryListViewModel.swift */; };
+		4DEA4A572811F477009AAC2F /* CategoryListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA4A562811F477009AAC2F /* CategoryListTableView.swift */; };
+		4DEA4A5A2811F51C009AAC2F /* CategoryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA4A582811F51C009AAC2F /* CategoryListTableViewCell.swift */; };
+		4DEA4A5B2811F51C009AAC2F /* CategoryListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DEA4A592811F51C009AAC2F /* CategoryListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +95,10 @@
 		4DEA4A4B2811E163009AAC2F /* HomePageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageRouter.swift; sourceTree = "<group>"; };
 		4DEA4A4F2811E3CD009AAC2F /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		4DEA4A512811E3F1009AAC2F /* FavouritePetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePetListViewController.swift; sourceTree = "<group>"; };
+		4DEA4A532811F3ED009AAC2F /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
+		4DEA4A562811F477009AAC2F /* CategoryListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListTableView.swift; sourceTree = "<group>"; };
+		4DEA4A582811F51C009AAC2F /* CategoryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListTableViewCell.swift; sourceTree = "<group>"; };
+		4DEA4A592811F51C009AAC2F /* CategoryListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryListTableViewCell.xib; sourceTree = "<group>"; };
 		6FFEF3B4A934A0A0259A9871 /* Pods-habit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-habit.debug.xcconfig"; path = "Target Support Files/Pods-habit/Pods-habit.debug.xcconfig"; sourceTree = "<group>"; };
 		F33A73E651BD0160579E49A0 /* Pods-habit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-habit.release.xcconfig"; path = "Target Support Files/Pods-habit/Pods-habit.release.xcconfig"; sourceTree = "<group>"; };
 		FF60DC3AC4C4B8383E3B9C96 /* Pods_habit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_habit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,7 +304,9 @@
 		4DEA4A4D2811E376009AAC2F /* CategoryListPage */ = {
 			isa = PBXGroup;
 			children = (
+				4DEA4A552811F465009AAC2F /* SubView */,
 				4DEA4A4F2811E3CD009AAC2F /* CategoryListViewController.swift */,
+				4DEA4A532811F3ED009AAC2F /* CategoryListViewModel.swift */,
 			);
 			path = CategoryListPage;
 			sourceTree = "<group>";
@@ -307,6 +317,16 @@
 				4DEA4A512811E3F1009AAC2F /* FavouritePetListViewController.swift */,
 			);
 			path = FavouritePetListPage;
+			sourceTree = "<group>";
+		};
+		4DEA4A552811F465009AAC2F /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				4DEA4A562811F477009AAC2F /* CategoryListTableView.swift */,
+				4DEA4A582811F51C009AAC2F /* CategoryListTableViewCell.swift */,
+				4DEA4A592811F51C009AAC2F /* CategoryListTableViewCell.xib */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 		54664004376CFD94C482799F /* Pods */ = {
@@ -387,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D68E59C2810496000120132 /* FavouriteCollectionViewCell.xib in Resources */,
+				4DEA4A5B2811F51C009AAC2F /* CategoryListTableViewCell.xib in Resources */,
 				4D67313B280F34590077894C /* CategoryCollectionViewCell.xib in Resources */,
 				4D799050280A040400D5047F /* Assets.xcassets in Resources */,
 				4D79904E280A040300D5047F /* Main.storyboard in Resources */,
@@ -450,12 +471,14 @@
 				4D673144280F52950077894C /* CardView.swift in Sources */,
 				4DDE4EC1280AFE2600517C22 /* SplashRouter.swift in Sources */,
 				4DDE4EA9280AE0BC00517C22 /* UIViewController.swift in Sources */,
+				4DEA4A542811F3ED009AAC2F /* CategoryListViewModel.swift in Sources */,
 				4D67313A280F34590077894C /* CategoryCollectionViewCell.swift in Sources */,
 				4D68E59B2810496000120132 /* FavouriteCollectionViewCell.swift in Sources */,
 				4DDE4ECF280B710100517C22 /* UserDefaults.swift in Sources */,
 				4D67313F280F40250077894C /* CategoryCollectionView.swift in Sources */,
 				4D68E598281048D300120132 /* FavouriteCollectionView.swift in Sources */,
 				4DDE4EC6280B19B300517C22 /* OnBoardCollectionViewCell.swift in Sources */,
+				4DEA4A5A2811F51C009AAC2F /* CategoryListTableViewCell.swift in Sources */,
 				4DDE4EB5280AE40D00517C22 /* CategoryResponseModel.swift in Sources */,
 				4DEA4A522811E3F1009AAC2F /* FavouritePetListViewController.swift in Sources */,
 				4DDE4EC3280B176C00517C22 /* OnboardingSlideModel.swift in Sources */,
@@ -476,6 +499,7 @@
 				4D799047280A040300D5047F /* AppDelegate.swift in Sources */,
 				4DDE4EA8280AE0BC00517C22 /* UIApplication.swift in Sources */,
 				4DEA4A4C2811E163009AAC2F /* HomePageRouter.swift in Sources */,
+				4DEA4A572811F477009AAC2F /* CategoryListTableView.swift in Sources */,
 				4D799049280A040300D5047F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

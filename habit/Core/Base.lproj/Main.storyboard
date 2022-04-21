@@ -378,9 +378,24 @@
                     <view key="view" contentMode="scaleToFill" id="5p0-L4-F5y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WiH-ha-wCJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ruf-p0-C5q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WiH-ha-wCJ" firstAttribute="top" secondItem="Ruf-p0-C5q" secondAttribute="top" id="4Pi-59-4YW"/>
+                            <constraint firstItem="Ruf-p0-C5q" firstAttribute="bottom" secondItem="WiH-ha-wCJ" secondAttribute="bottom" id="5SX-QX-3aI"/>
+                            <constraint firstItem="WiH-ha-wCJ" firstAttribute="leading" secondItem="Ruf-p0-C5q" secondAttribute="leading" id="RkW-Wp-y6f"/>
+                            <constraint firstItem="Ruf-p0-C5q" firstAttribute="trailing" secondItem="WiH-ha-wCJ" secondAttribute="trailing" id="fW0-sz-wry"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="categoryListTableView" destination="WiH-ha-wCJ" id="wTs-NC-iIU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPl-cb-MHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -393,8 +408,20 @@
                     <view key="view" contentMode="scaleToFill" id="168-yV-3cw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0mo-ne-mga">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4Oa-WN-ZzK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Oa-WN-ZzK" firstAttribute="trailing" secondItem="0mo-ne-mga" secondAttribute="trailing" id="50I-gG-Tgt"/>
+                            <constraint firstItem="0mo-ne-mga" firstAttribute="leading" secondItem="4Oa-WN-ZzK" secondAttribute="leading" id="F1X-Dq-QQt"/>
+                            <constraint firstItem="0mo-ne-mga" firstAttribute="top" secondItem="4Oa-WN-ZzK" secondAttribute="top" id="O7q-Hq-Qh4"/>
+                            <constraint firstItem="4Oa-WN-ZzK" firstAttribute="bottom" secondItem="0mo-ne-mga" secondAttribute="bottom" id="tjY-3g-9Pt"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bER-NE-Sqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
