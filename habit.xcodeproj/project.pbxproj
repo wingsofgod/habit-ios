@@ -44,6 +44,9 @@
 		4DDE4ECA280B5EA800517C22 /* OnBoardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE4EC9280B5EA800517C22 /* OnBoardRouter.swift */; };
 		4DDE4ECD280B606F00517C22 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE4ECC280B606F00517C22 /* HomePageViewController.swift */; };
 		4DDE4ECF280B710100517C22 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE4ECE280B710100517C22 /* UserDefaults.swift */; };
+		4DEA4A4C2811E163009AAC2F /* HomePageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA4A4B2811E163009AAC2F /* HomePageRouter.swift */; };
+		4DEA4A502811E3CD009AAC2F /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA4A4F2811E3CD009AAC2F /* CategoryListViewController.swift */; };
+		4DEA4A522811E3F1009AAC2F /* FavouritePetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA4A512811E3F1009AAC2F /* FavouritePetListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +88,9 @@
 		4DDE4EC9280B5EA800517C22 /* OnBoardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardRouter.swift; sourceTree = "<group>"; };
 		4DDE4ECC280B606F00517C22 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		4DDE4ECE280B710100517C22 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		4DEA4A4B2811E163009AAC2F /* HomePageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageRouter.swift; sourceTree = "<group>"; };
+		4DEA4A4F2811E3CD009AAC2F /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		4DEA4A512811E3F1009AAC2F /* FavouritePetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePetListViewController.swift; sourceTree = "<group>"; };
 		6FFEF3B4A934A0A0259A9871 /* Pods-habit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-habit.debug.xcconfig"; path = "Target Support Files/Pods-habit/Pods-habit.debug.xcconfig"; sourceTree = "<group>"; };
 		F33A73E651BD0160579E49A0 /* Pods-habit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-habit.release.xcconfig"; path = "Target Support Files/Pods-habit/Pods-habit.release.xcconfig"; sourceTree = "<group>"; };
 		FF60DC3AC4C4B8383E3B9C96 /* Pods_habit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_habit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +255,7 @@
 				4D0497AB280C3F7B00B6E0F1 /* SubView */,
 				4DDE4ECC280B606F00517C22 /* HomePageViewController.swift */,
 				4D67313C280F38DD0077894C /* HomePageViewModel.swift */,
+				4DEA4A4B2811E163009AAC2F /* HomePageRouter.swift */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -268,6 +275,8 @@
 		4DE31C6F280A15DF00C71CE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4DEA4A4E2811E387009AAC2F /* FavouritePetListPage */,
+				4DEA4A4D2811E376009AAC2F /* CategoryListPage */,
 				4DDE4ECB280B605A00517C22 /* HomePage */,
 				4DDE4EBD280AF7FE00517C22 /* OnBoard */,
 				4DE31C70280A15ED00C71CE3 /* Splash */,
@@ -282,6 +291,22 @@
 				4DDE4EC0280AFE2600517C22 /* SplashRouter.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		4DEA4A4D2811E376009AAC2F /* CategoryListPage */ = {
+			isa = PBXGroup;
+			children = (
+				4DEA4A4F2811E3CD009AAC2F /* CategoryListViewController.swift */,
+			);
+			path = CategoryListPage;
+			sourceTree = "<group>";
+		};
+		4DEA4A4E2811E387009AAC2F /* FavouritePetListPage */ = {
+			isa = PBXGroup;
+			children = (
+				4DEA4A512811E3F1009AAC2F /* FavouritePetListViewController.swift */,
+			);
+			path = FavouritePetListPage;
 			sourceTree = "<group>";
 		};
 		54664004376CFD94C482799F /* Pods */ = {
@@ -421,6 +446,7 @@
 				4DDE4EA7280AE0BC00517C22 /* UITableViewCell.swift in Sources */,
 				4D79904B280A040300D5047F /* SplashViewController.swift in Sources */,
 				4DDE4EA6280AE0BC00517C22 /* CustomError.swift in Sources */,
+				4DEA4A502811E3CD009AAC2F /* CategoryListViewController.swift in Sources */,
 				4D673144280F52950077894C /* CardView.swift in Sources */,
 				4DDE4EC1280AFE2600517C22 /* SplashRouter.swift in Sources */,
 				4DDE4EA9280AE0BC00517C22 /* UIViewController.swift in Sources */,
@@ -431,6 +457,7 @@
 				4D68E598281048D300120132 /* FavouriteCollectionView.swift in Sources */,
 				4DDE4EC6280B19B300517C22 /* OnBoardCollectionViewCell.swift in Sources */,
 				4DDE4EB5280AE40D00517C22 /* CategoryResponseModel.swift in Sources */,
+				4DEA4A522811E3F1009AAC2F /* FavouritePetListViewController.swift in Sources */,
 				4DDE4EC3280B176C00517C22 /* OnboardingSlideModel.swift in Sources */,
 				4D67313D280F38DD0077894C /* HomePageViewModel.swift in Sources */,
 				4DDE4EAA280AE0BC00517C22 /* UIImageView.swift in Sources */,
@@ -448,6 +475,7 @@
 				4DDE4ECD280B606F00517C22 /* HomePageViewController.swift in Sources */,
 				4D799047280A040300D5047F /* AppDelegate.swift in Sources */,
 				4DDE4EA8280AE0BC00517C22 /* UIApplication.swift in Sources */,
+				4DEA4A4C2811E163009AAC2F /* HomePageRouter.swift in Sources */,
 				4D799049280A040300D5047F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

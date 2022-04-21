@@ -219,8 +219,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="ivV-W5-7Wl"/>
                     <connections>
+                        <outlet property="categoriesSeeAllText" destination="BMw-J4-L6b" id="v5l-PQ-Qp7"/>
                         <outlet property="categoryCollectionView" destination="SFm-VH-KK7" id="nvf-YQ-CHP"/>
                         <outlet property="favouriteCollectionView" destination="tbA-aO-NDO" id="p1I-CJ-mq3"/>
+                        <outlet property="favouriteSeeAllText" destination="I8w-MC-33Q" id="yzL-Om-j07"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CB7-bg-Yd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -368,6 +370,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjf-2F-uur" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="808.92857142857144"/>
+        </scene>
+        <!--Category List View Controller-->
+        <scene sceneID="WhB-R9-llJ">
+            <objects>
+                <viewController storyboardIdentifier="categoryListVC" id="hDH-fs-Xoa" customClass="CategoryListViewController" customModule="habit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5p0-L4-F5y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ruf-p0-C5q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPl-cb-MHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="1544"/>
+        </scene>
+        <!--Favourite Pet List View Controller-->
+        <scene sceneID="Ho8-jM-RAo">
+            <objects>
+                <viewController storyboardIdentifier="favouritePetListVC" id="QoY-ql-W9c" customClass="FavouritePetListViewController" customModule="habit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="168-yV-3cw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Oa-WN-ZzK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bER-NE-Sqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="1544"/>
         </scene>
     </scenes>
     <resources>

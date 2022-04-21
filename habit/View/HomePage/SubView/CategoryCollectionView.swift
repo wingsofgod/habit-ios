@@ -39,7 +39,7 @@ final class CategoryCollectionView: NSObject {
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 160, height: 50)
+        return CGSize(width: 130, height: 50)
     }
 }
 

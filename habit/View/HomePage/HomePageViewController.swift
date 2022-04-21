@@ -18,22 +18,22 @@ protocol HomePageViewControllerOutPut {
 class HomePageViewController: UIViewController {
 
     lazy var homePageViewModel: IHomePageViewModel = HomePageViewModel()
-    
+    lazy var router: HomePageRoutingLogic = HomePageRouter()
+
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     private let myCategoryCollectionView: CategoryCollectionView = CategoryCollectionView()
-    
-    
+
+    @IBOutlet weak var categoriesSeeAllText: UILabel!
+    @IBOutlet weak var favouriteSeeAllText: UILabel!
+
     @IBOutlet weak var favouriteCollectionView: UICollectionView!
     private let myFavouriteCollectionView: FavouriteCollectionView = FavouriteCollectionView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        homePageViewModel.setDelegate(output: self)
-        homePageViewModel.getCategoryList()
-        homePageViewModel.getFavouriteList()
         configure()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -44,8 +44,22 @@ class HomePageViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    private func configure(){
+    private func configure() {
+        router.viewController = self
+        homePageViewModel.setDelegate(output: self)
+        homePageViewModel.getCategoryList()
+        homePageViewModel.getFavouriteList()
+        click()
+    }
 
+    private func click() {
+        categoriesSeeAllText.addTapGesture { [weak self] in
+            self?.router.route(.categoryListPage)
+        }
+        
+        favouriteSeeAllText.addTapGesture { [weak self] in
+            self?.router.route(.favouritePetListPage)
+        }
     }
 
     private func initCategoryCollectionViewDelegate() {
@@ -55,7 +69,7 @@ class HomePageViewController: UIViewController {
         myCategoryCollectionView.delegate = self
         CategoryCollectionViewCell.registerCellXib(with: categoryCollectionView)
     }
-    
+
     private func initFavouriteCollectionViewDelegate() {
         favouriteCollectionView.delegate = myFavouriteCollectionView
         favouriteCollectionView.dataSource = myFavouriteCollectionView
