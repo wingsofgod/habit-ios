@@ -13,6 +13,12 @@ class FavouriteCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var favouriteImageView: UIImageView!
     @IBOutlet weak var favouriteLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.contentView.frame = self.bounds
+        self.contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    }
+    
     func setup(favouriteModel: FavouriteAnimalResponseModel) {
         favouriteImageView.forURL(favouriteModel.image ?? "", fail: { error in
             //self.imageView?.image = defaultImage

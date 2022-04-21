@@ -12,8 +12,13 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     static let identifier = String(describing: CategoryCollectionViewCell.self)
     @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var cardView: CardView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.contentView.frame = self.bounds
+        self.contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    }
+
     func setup(categoryModel: CategoryResponseModel) {
         categoryImageView.forURL(categoryModel.image ?? "", fail: { error in
             //self.imageView?.image = defaultImage
@@ -21,7 +26,5 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         })
         categoryImageView.contentMode = .scaleAspectFill
         categoryLabel.text = categoryModel.name ?? ""
-
     }
-
 }
